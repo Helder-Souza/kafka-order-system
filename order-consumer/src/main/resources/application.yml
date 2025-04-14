@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: order-consumer
+  kafka:
+    bootstrap-servers: localhost:9092
