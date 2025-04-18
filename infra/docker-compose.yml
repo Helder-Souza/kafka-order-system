@@ -19,3 +19,12 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zookeeper
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_server_topic
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: kafkadatabase
+    ports:
+      - "3306:3306"
