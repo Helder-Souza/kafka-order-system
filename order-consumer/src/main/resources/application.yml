@@ -10,7 +10,8 @@ spring:
         properties:
           spring.json.trusted.packages: com.queue.order_producer.model
   jpa:
-    hibernate: ddl-auto=update
+    hibernate:
+      ddl-auto: update
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/kafkadatabase
     username: root

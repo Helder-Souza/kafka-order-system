@@ -12,7 +12,29 @@ public class OrderEntity {
     private String id;
     private String client;
     private String data;
-    private LocalDateTime creationDate;
+    private final LocalDateTime creationDate = LocalDateTime.now();
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
 }
